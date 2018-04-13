@@ -1,0 +1,460 @@
+* {
+	padding:0px;
+	margin:0px;
+	font-weight: normal;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	background: #f4f4f4;
+	position: relative;
+}
+
+.hide {
+	display: hidden;
+}
+.show {
+	display: block;
+}
+
+
+/*天气顶部页面开始*/
+
+header {
+	width:100%;
+	height: 4.7rem;
+	background: url('../img/screen.png') no-repeat center bottom, -webkit-linear-gradient(top, #323f7e, #478bc3);
+	background-size: contain;
+} 
+.top-bar {
+	height: 0.52rem;
+	width: 100%;
+	line-height: 0.52rem;
+	font-size: 0.16rem;
+	text-align: center;
+	color:#FFF;
+}
+.breathPollute {
+	height: 0.44rem;
+	width: 0.72rem;
+	background: #f1ab62;
+	margin-left: 0.08rem;
+	border-radius: 0.08rem;
+}
+.breathPollute p {
+	text-align: center;
+	font-size: 0.12rem;
+	color: #FFF;
+}
+.temperature {
+	/*width: 100%;*/
+	height: 0.64rem;
+	line-height: 0.64rem;
+	margin-left: 2.22rem;
+	font-size: 0.46rem;
+	color: #FFF;
+}
+.weather {
+	width: 100%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	text-align: center;
+	font-size: 0.2rem;
+	color: #FFF;
+}
+.humidity {
+	width: 100%;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	text-align: center;
+	font-size: 0.16rem;
+	color: #FFF;
+}
+.humidity span:last-child{
+	margin-left: 0.09rem;
+}
+.markedWords {
+	width: 100%;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	text-align: center;
+	font-size: 0.16rem;
+	margin-top: 0.25rem;
+	color: #FFF;
+}
+/*天气顶部页面结束*/
+
+
+/*今天天气开始*/
+.todayAndTommWeather {
+	width: 100%;
+	height: 1.02rem;
+	/*line-height: 0.33rem;*/
+	/*text-align: center;*/
+	/*font-size: 0.16rem;*/
+	/*margin-top: 0.25rem;*/
+	/*color: #FFF;*/
+	background: #FFF;
+	/*line-height: 1.02rem;*/
+	display: flex;
+	border-bottom: 0.01rem solid #e4e4e4;
+}
+.today {
+	margin-left: 0.2rem;
+	margin-top: 0.26rem;
+	width: 2.3rem;
+	height: 0.52rem;
+	background: #fff;
+}
+.tomm {
+	border-left: 1px solid #f4f4f4;
+	margin-left: 0.01rem;
+	margin-top: 0.26rem;
+	width: 2.3rem;
+	height: 0.52rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+.today-top {
+	width: 100%;
+	height: 0.16rem;
+	display: flex;
+	justify-content: space-between;
+}
+.today-bottom {
+	margin-top: 0.12rem;
+	/*width: 2.3rem;*/
+	height: 0.28rem;
+	display: flex;
+	line-height: 0.28rem;
+	justify-content: space-between;	
+}
+
+.today-top .today-top-left {
+	font-size: 0.14rem;
+}
+.today-top .today-top-right {
+	font-size: 0.10rem;
+	margin-right: 0.2rem;
+}
+
+.today-bottom .today-bottom-left {
+	font-size: 0.14rem;
+}
+.today-bottom .today-bottom-right {
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-right: 0.2rem;
+	background: url('../img/0.png') no-repeat;
+	background-size: cover;
+}
+/*今天天气结束*/
+
+/*24小时天气开始*/
+.oneDayWeather {
+	float: left;
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 1.36rem;
+	overflow-x: auto;
+	background: #FFF;
+	border-bottom: 0.01rem solid #e4e4e4;
+	margin-bottom: 0.11rem;
+}
+
+.oneDayWeather::-webkit-scrollbar {
+	height:0;
+}
+.oneDayWeather .content {
+	margin-top: 0.18rem;
+	width: 150%;
+	height: 1rem;
+    display: flex;
+    flex-direction: row;		
+    justify-content: space-between;	
+}
+.oneDayWeather .content .weatherList {
+	float: left;
+	margin-left: 0.23rem;
+	width: 0.41rem;
+}
+.oneDayWeather .content .weatherList p {
+	width: 0.32rem;
+}
+.oneDayWeather .content .weatherList .weatherTime {
+	color: #999;
+	font-size:0.07rem;
+}
+.oneDayWeather .content .weatherList .weatherLogo {
+	margin-top: 0.08rem;
+	margin-bottom: 0.08rem;
+	margin-left: 0.01rem;
+	height: 0.4rem;
+	width: 0.4rem;
+	background: url(../img/0.png) no-repeat;
+	background-position: center;
+	background-size: 0.4rem;	
+}
+.oneDayWeather .content .weatherList .timeTemperature {
+	text-align: center;
+	font-size:0.07rem;
+}
+/*24小时天气结束*/
+
+/*一周天气开始*/
+.oneWeekWeather {
+	float: left;
+	height: 3.89rem;
+	width: 100%;
+	border-top: 0.01rem solid #e4e4e4;
+	border-bottom: 0.01rem solid #e4e4e4;
+	background: #FFF;
+	overflow-x: auto;
+}
+.oneWeekWeather::-webkit-scrollbar {
+	height:0;
+}
+.oneWeekWeather .content {
+	margin-top: 0.265rem;
+	height: 3.36rem;
+	width: 320%;
+	display: flex;
+    flex-direction: row;		
+    justify-content: space-between;		
+}
+.oneWeekWeather .content .weatherList {
+	color: #999;
+	font-size: 0.07rem;
+	width: 0.56rem;
+	height: 3.36rem;
+    display: flex;
+    flex-direction: column;		
+    justify-content: space-between;
+}
+.oneWeekWeather .content .weatherList p {
+	text-align: center;
+}
+.oneWeekWeather .content .weatherList p:nth-child(4),.oneWeekWeather .content .weatherList p:nth-child(7) {
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url(../img/5.png) no-repeat center;
+	background-size: cover;
+	margin: 0 auto;
+}
+/*一周天气结束*/
+
+.weatherPage {
+	display: none;
+}
+
+/*城市页面开始*/
+.city {
+	height: 6.67rem;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	top:0px;
+	left:0px;
+	/*display: none;*/
+	overflow-y: auto;
+	/*display: none;*/
+}
+/*.city::-webkit-scrollbar {
+	height: 0;
+}*/
+.search {
+	height: 0.45rem;
+	border-bottom: 0.01rem solid #eeeeee;
+	background: #fff;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top:0;
+	left:0;
+	background: #fff;
+	z-index: 999;
+}
+.search-box {
+	margin-left: 0.13rem;
+	margin-top: 0.08rem;
+	float: left;
+	width: 4.27rem;
+	height: 0.3rem;
+	border-radius: 0.15rem;
+	overflow: hidden;
+	background: #f2f2f2;
+}
+.search-img {
+	float: left;
+	margin-left: 0.1rem;
+	width: 0.14rem;
+	height: 0.3rem;
+	background: url(../img/search-img.png) no-repeat right;
+	background-size: cover;
+}
+
+.search-box input {
+	float: right;
+	width: 3.95rem;
+	height: 0.3rem;
+	border: none;
+	background: #f2f2f2;
+}
+.search-box input:focus {
+	outline: none;
+}
+.cancel {
+	margin-top: 0.08rem;
+	font-size: 0.14rem;
+	margin-right: 0.2rem;
+	height: 0.3rem;
+	background: #fff;
+	line-height: 0.3rem;
+}
+.hot-city {
+	width: 100%;
+	/*height: 5.41rem;*/
+	margin-top: 0.45rem;
+	height: 10rem;
+}
+
+.hot-city p {
+	width: 90%;
+	float: left;
+	display: block;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.16rem;
+	padding: 0.13rem;
+	margin-bottom: 0.07rem;
+}
+.hot-city-info, .hot-scenic-info {
+	/*float: left;*/
+	height: auto;
+	width: 4.74rem;
+	margin: 0 auto;
+}
+.hot-city-info ul li, .hot-scenic-info ul li {
+	float: left;
+	height: 0.32rem;
+	width: 1.52rem;
+	background: #f2f2f2;
+	margin-right: 0.09rem;
+	margin-bottom: 0.12rem;
+	font-size: 0.14rem;
+	text-align: center;
+	line-height: 0.32rem;
+	border-radius: 0.16rem;
+}
+.hot-city-info ul li:nth-child(3n), .hot-scenic-info ul li:nth-child(3n) {
+	margin-right: 0;
+}
+
+/*城市页面结束*/
+
+
+/*功能列表开始*/
+/*.func {
+	float: left;
+	width: 100%;
+	height: 1.88rem;  
+	background: #fff;
+	border: 0.01rem solid #eeeeee;
+}
+.func-block {
+	float: left;
+	width: 1.24rem;
+	height: 0.94rem;
+	border-right: 0.01rem solid #eeeeee;
+	border-top: 0.01rem solid #eeeeee;
+}
+.func-block p:first-child{
+	width: 100%;
+	height: 0.18rem;
+	margin-top: 0.18rem;
+}
+.func-block p:first-child img{
+	float: left;
+	height: 0.18rem;
+	width: 0.18rem;
+	margin-left: 0.51rem;
+}
+.func-block p:nth-child(2){
+	text-align: center;
+	width: 100%;
+	height: 0.14rem;
+	font-size: 0.14rem;
+	margin-top: 0.13rem;
+}
+.func-block p:nth-child(3){
+	color: #999999;
+	text-align: center;
+	width: 100%;
+	height: 0.12rem;
+	font-size: 0.12rem;
+	margin-top: 0.06rem;
+}
+.func-block:nth-child(1), .func-block:nth-child(2), .func-block:nth-child(3), .func-block:nth-child(4) {
+	border-top:0;
+}
+.func-block:nth-child(4), .func-block:nth-child(8) {
+	border-right:0;
+}*/
+/*功能列表结束*/
+
+/*功能列表百分比布局开始*/
+.func {
+	float: left;
+	width: 100%;
+	height: 1.89rem;  
+	background: #fff;
+	border-right: 0.01rem solid #eeeeee;
+	border-bottom: 0.01rem solid #eeeeee;
+	box-sizing: border-box;
+}
+.func-block {
+	float: left;
+	width: 25%;
+	height: 0.94rem;
+	border: 0.01rem solid #eeeeee;
+	box-sizing: border-box;
+}
+.func-block:nth-child(4n){
+	border-right: none;
+}
+.func-block:nth-child(4)~div{
+	border-bottom: none;
+}
+.func-block p:first-child{
+	width: 100%;
+	height: 0.18rem;
+	margin-top: 0.18rem;
+}
+.func-block p:first-child img{
+	display: block;
+	margin: 0 auto;
+	height: 0.18rem;
+	width: 0.18rem;
+}
+.func-block p:nth-child(2){
+	text-align: center;
+	width: 100%;
+	height: 0.14rem;
+	font-size: 0.14rem;
+	margin-top: 0.09rem;
+}
+.func-block p:nth-child(3){
+	color: #999999;
+	text-align: center;
+	width: 100%;
+	height: 0.12rem;
+	font-size: 0.12rem;
+	margin-top: 0.06rem;
+}
+
+/*功能列表百分比布局结束*/
+

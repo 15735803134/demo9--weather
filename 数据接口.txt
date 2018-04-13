@@ -1,0 +1,6 @@
+请求城市的API接口：
+https://www.toutiao.com/stream/widget/local_weather/city/
+
+
+请求吕梁市天气情况的数据接口：
+https://www.toutiao.com/stream/widget/local_weather/data/?city=吕梁
